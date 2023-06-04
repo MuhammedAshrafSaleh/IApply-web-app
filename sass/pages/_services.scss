@@ -1,0 +1,33 @@
+.services {
+    width: 100%;
+    padding: 10rem 0;
+    &__body {
+        display: flex;
+        margin: 5rem 0;
+        @media only screen and (max-width:70rem) {
+            flex-direction: column;
+            align-content:center;
+            max-width: 100%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @media only screen and (max-width: 70rem) {
+            margin-bottom: 5rem;
+        }
+    }
+    &__icon {
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+    .secondary__text {
+        text-align: center;
+        @media only screen and (max-width: 70rem) {
+            padding: 0 5rem;
+        }
+    }
+
+}

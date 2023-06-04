@@ -1,0 +1,57 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 3rem;
+  .nav__heading {
+    img {
+      max-width: 5rem;
+    }
+  }
+  &__video {
+    position: absolute;
+    width: 100vw;
+    object-fit: cover;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow:hidden;
+  }
+  &__body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    @media only screen and (max-width: 94rem) {
+      max-width:80%;
+    }
+    @media only screen and (max-width: 75rem) {
+      width:100%;
+    }
+  }
+  &__heading {
+    font-size:7rem;
+    font-family: Lato;
+    color: #FFF;
+    span {
+      color: #333;
+      padding:0 1rem;
+      padding-bottom: 0.3rem;
+      background-color:var(--primary-logo);
+    }
+    @media only screen and (max-width: 120rem) {
+      font-size: 6rem;
+     }
+    @media only screen and (max-width: 75rem) {
+     font-size: 5rem;
+    }
+  }
+  &__btn {
+    margin-top:3rem;
+  }
+}

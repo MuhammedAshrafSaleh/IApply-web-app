@@ -1,0 +1,23 @@
+.customers {
+  .main__text {
+      text-align: center
+  }  
+  .main__text {
+    @media only screen and (max-width:850px) {
+        padding: 0 2rem;
+    }
+  }
+  &__body {
+      margin: 5rem 0;
+  }
+  &__img {
+      height: 20rem;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      img {
+          align-self: center;
+          max-width: 15rem;
+      }
+  }
+}

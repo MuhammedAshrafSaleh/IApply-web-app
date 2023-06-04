@@ -1,0 +1,20 @@
+.btn {
+    outline: none;
+    border: none;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.2rem solid #FFF;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lato';
+    display: inline-block;
+}
+.btn:hover {
+    background-color: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
+    color: #333;
+}

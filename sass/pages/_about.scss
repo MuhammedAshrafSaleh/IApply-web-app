@@ -1,0 +1,23 @@
+.about{
+    width: 100%;
+    background-attachment: fixed;
+    background-image: url(../../imgs/about/about.jpg);
+    background-position: center;
+    width: 100%;
+    padding: 10rem 0;
+    background-size: cover;
+    position: relative;
+    z-index: 11;
+    &__heading {
+        z-index: 11;
+        position: relative;
+        color: #FFF;
+    }
+    &__text {
+        z-index: 11;
+        position: relative; 
+        color: #FFF;
+        font-weight: 400;
+        text-align: center;
+    }
+}

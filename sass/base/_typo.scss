@@ -1,0 +1,32 @@
+.main__heading {
+  font-size: 5rem;
+  color: #333;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-bottom:2rem;
+  span {
+    color: #333;
+    padding:0 1rem;
+    background-color:var(--primary-logo);
+  }
+}
+.main__text,
+.secondary__text {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  opacity: 0.8;
+  line-height: 150%;
+}
+.secondary__head {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  color: #333;
+}
+.secondary__text {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}

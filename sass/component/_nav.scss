@@ -1,0 +1,126 @@
+.nav {
+  margin:auto;
+  width: 90%;
+  display: flex;
+  padding: 0 3rem;
+  position: relative;
+  z-index: 99999;
+  &__heading {
+    display: flex;
+    background: #111;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 1.6rem;
+  }
+  &__text {
+    align-self: center;
+    letter-spacing: 1px;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    font-family: "Lato";
+    color: var(--white);
+    font-weight: 600;
+    span {
+      background-color: yellow;
+      color: #333;
+      text-align: center;
+      padding: 0px 5px;
+      padding-left: 5.5px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+  }
+  &__icon {
+    max-width: 5rem;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  &__item {
+    margin-right: 2rem;
+  }
+  &__link:visited,
+  &__link {
+    font-size: 1.8rem;
+    font-family: "Lato";
+    color: var(--white);
+    opacity: 0.6;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+  }
+  &__link:hover,
+  &__link:visited:hover {
+    color: var(--primary-color);
+  }
+}
+.sticky {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem 6rem;
+  display: flex;
+  z-index: 11111111;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.15s;
+}
+@media only screen and (max-width: 800px) {
+  .sticky {
+    padding: 3rem 6rem;
+  }
+  .nav {
+    top: -2.5rem;
+    width: 100%;
+    padding-top: 5rem;
+    &::after {
+      position: relative;
+    }
+
+    &__link {
+      font-size: 3.5rem !important;
+    }
+    .transform {
+      transform: translateX(-100%);
+    }
+    &__list {
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      z-index: 1111;
+      padding: 10rem 4rem; 
+      transition: all ease-in-out 0.5s;
+    }
+    &__item {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+  }
+    &__bars {
+      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      align-self: center;
+      margin-bottom: -1rem;
+      margin-left: auto;
+      z-index: 11111;
+      .bar {
+        width: 5rem;
+        border-radius: 1rem;
+        height: 0.5rem;
+        background-color:var(--primary-logo);
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
