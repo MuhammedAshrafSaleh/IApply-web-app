@@ -30,4 +30,17 @@
            display: none;
         }
     }
+
+    .btn {
+        border: 1px solid var(--primary-color);
+        width: 80%;
+        color: #333;
+        font-family: 'Lato';
+        &:hover {
+            color: azure; 
+        }
+        @media only screen and (max-width: 800px) {
+           width: 100%;
+        }
+    }
 }

@@ -421,8 +421,7 @@ ul {
 
 .mission {
   margin-top: 20rem;
-  padding: 10rem 0;
-  background-color: var(--gray); }
+  padding: 10rem 0; }
   .mission__header {
     margin-bottom: 7rem; }
     .mission__header .secondary__text {
@@ -475,6 +474,16 @@ ul {
     @media only screen and (max-width: 800px) {
       .contact__img {
         display: none; } }
+  .contact .btn {
+    border: 1px solid var(--primary-color);
+    width: 80%;
+    color: #333;
+    font-family: 'Lato'; }
+    .contact .btn:hover {
+      color: azure; }
+    @media only screen and (max-width: 800px) {
+      .contact .btn {
+        width: 100%; } }
 
 .customers .main__text {
   text-align: center; }
